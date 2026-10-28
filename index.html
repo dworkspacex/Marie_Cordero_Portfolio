@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Marie Cordero — customer service, research and data entry professional based in the Philippines. Explore experience and connect for remote opportunities.">
+  <title>Marie Cordero — Remote Support Professional</title>
+  
+  <style>
+    :root {
+      --ink: #22291f;
+      --muted: #6a7066;
+      --olive: #4b5e3b;
+      --paper: #fafbf7;
+      --line: #dce1d5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #829769;
+      outline-offset: 5px;
+    }
+
+    .wrap {
+      width: min(1120px, 88%);
+      margin: auto;
+    }
+
+    nav {
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 25px;
+    }
+
+    .logo span {
+      color: var(--olive);
+    }
+
+    .links {
+      display: flex;
+      gap: 32px;
+      font-size: 13px;
+    }
+
+    .links a:hover {
+      color: var(--olive);
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 70px;
+      align-items: center;
+      padding: 70px 0 65px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: var(--olive);
+    }
+
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      border: 1px solid var(--line);
+      padding: 6px 12px;
+      border-radius: 30px;
+      font-size: 11px;
+      letter-spacing: .5px;
+    }
+
+    .dot {
+      height: 6px;
+      width: 6px;
+      background: var(--olive);
+      border-radius: 50%;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      font: normal clamp(44px, 5.2vw, 68px)/1.08 Georgia, serif;
+      letter-spacing: -2px;
+      margin: 25px 0;
+    }
+
+    h1 em {
+      color: var(--olive);
+      font-weight: normal;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .intro {
+      max-width: 440px;
+      font-size: 15px;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 25px;
+      background: var(--olive);
+      color: white;
+      padding: 13px 23px;
+      font-size: 13px;
+    }
+
+    .btn:hover {
+      background: #35452a;
+    }
+
+    .textlink {
+      font-size: 13px;
+      border-bottom: 1px solid var(--ink);
+      padding: 6px 0;
+    }
+
+    .portrait {
+      height: 510px;
+      background: #eef0e7;
+      position: relative;
+      overflow: hidden;
+      border-radius: 180px 180px 8px 8px;
+    }
+
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      mix-blend-mode: multiply;
+    }
+
+    .photo-caption {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 13px;
+    }
+
+    .strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-block: 1px solid var(--line);
+      padding: 25px 0;
+      gap: 35px;
+    }
+
+    .strip strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: 27px;
+    }
+
+    .strip span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    section {
+      padding: 75px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 25px;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font: normal 38px/1.2 Georgia, serif;
+      letter-spacing: -.7px;
+      margin: 10px 0 0;
+    }
+
+    .section-head p {
+      font-size: 13px;
+      max-width: 310px;
+      margin: 0;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service {
+      padding: 25px 0 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .num {
+      font: italic 17px Georgia, serif;
+      color: var(--olive);
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: 500;
+      margin: 20px 0 12px;
+    }
+
+    .service p {
+      font-size: 14px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+
+    .tags span {
+      border: 1px solid var(--line);
+      padding: 4px 10px;
+      font-size: 11px;
+      color: var(--muted);
+      border-radius: 3px;
+    }
+
+    .career {
+      display: grid;
+      grid-template-columns: .65fr 1.35fr;
+      gap: 80px;
+    }
+
+    .job {
+      display: grid;
+      grid-template-columns: 95px 1fr;
+      gap: 25px;
+      padding: 25px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .job:first-child {
+      padding-top: 0;
+    }
+
+    .job:last-child {
+      border: 0;
+      padding-bottom: 0;
+    }
+
+    .date {
+      font-size: 11px;
+      color: var(--muted);
+      padding-top: 4px;
+    }
+
+    .job h3 {
+      margin: 0 0 5px;
+    }
+
+    .company {
+      font-size: 13px;
+      color: var(--olive);
+    }
+
+    .job p {
+      font-size: 13px;
+      margin: 8px 0 0;
+    }
+
+    .award {
+      background: #eef1e7;
+      border-left: 2px solid var(--olive);
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 12px;
+    }
+
+    .award strong {
+      display: block;
+      color: var(--olive);
+      margin-bottom: 7px;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .contact h2 {
+      font-size: 44px;
+    }
+
+    .contact p {
+      font-size: 14px;
+      margin: 20px 0;
+    }
+
+    .contact-address {
+      font: normal clamp(16px, 2vw, 22px) Georgia, serif;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 20px;
+      overflow-wrap: anywhere;
+      display: block;
+    }
+
+    .contact-meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 17px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 0;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        height: 74px;
+      }
+
+      .links {
+        gap: 17px;
+        font-size: 11px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 40px;
+      }
+
+      h1 {
+        font-size: 51px;
+      }
+
+      .portrait {
+        height: 420px;
+        max-width: 420px;
+        width: 100%;
+        margin: auto;
+      }
+
+      .photo-caption {
+        max-width: 420px;
+        margin: 13px auto;
+      }
+
+      .strip {
+        gap: 15px;
+      }
+
+      .strip strong {
+        font-size: 23px;
+      }
+
+      .strip span {
+        font-size: 11px;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head p {
+        margin-top: 18px;
+      }
+
+      .services,
+      .career,
+      .contact {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .services {
+        gap: 14px;
+      }
+
+      section {
+        padding: 50px 0;
+      }
+
+      .job {
+        grid-template-columns: 80px 1fr;
+        gap: 12px;
+      }
+
+      .contact h2 {
+        font-size: 38px;
+      }
+
+      footer {
+        gap: 20px;
+      }
+
+      .award {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="#">Marie Cordero<span>.</span></a>
+      <div class="links">
+        <a href="#support">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Let’s connect ↗</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <header class="hero">
+        <div>
+          <div class="availability">
+            <span class="dot"></span> OPEN TO REMOTE OPPORTUNITIES
+          </div>
+          <h1>Thoughtful support.<br><em>Reliable results.</em></h1>
+          <p class="intro">
+            Hi, I’m Marie Florevie R. Cordero — a customer service, research, and data entry professional with experience supporting US, UK, and Australian accounts.
+          </p>
+          <div class="actions">
+            <a class="btn" href="mailto:mariefr.cordero14@gmail.com">Get in touch <span>↗</span></a>
+            <a class="textlink" href="assets/marie-cordero-resume.pdf" download>Download résumé ↓</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="portrait">
+            <img src="assets/marie-cordero.png" alt="Marie Florevie R. Cordero in professional attire">
+          </div>
+          <div class="photo-caption">
+            <span>BASED IN THE PHILIPPINES</span>
+            <span>Customer-focused. Detail-oriented.</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Highlights Strip -->
+      <div class="strip">
+        <div>
+          <strong>US · UK · AU</strong>
+          <span>International account experience</span>
+        </div>
+        <div>
+          <strong>2015–2024</strong>
+          <span>Career spanning multiple industries</span>
+        </div>
+        <div>
+          <strong>5-year award</strong>
+          <span>Recognition at Abbott (Toxicology) · 2024</span>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <section id="support">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">How I can help</div>
+            <h2>Support you can count on.</h2>
+          </div>
+          <p>Bringing clear communication, adaptability, and care to the everyday details.</p>
+        </div>
+
+        <div class="services">
+          <article class="service">
+            <span class="num">01 /</span>
+            <h3>Customer support</h3>
+            <p>Customer service experience across technology, business banking, logistics, and healthcare accounts.</p>
+            <div class="tags">
+              <span>Customer communication</span>
+              <span>Service mindset</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <span class="num">02 /</span>
+            <h3>Research & data entry</h3>
+            <p>Experience as a Donor Contact Specialist in Research & Recovery, with data entry responsibilities for a US healthcare account.</p>
+            <div class="tags">
+              <span>Research & recovery</span>
+              <span>Data entry</span>
+            </div>
+          </article>
+
+          <article class="service">
+            <span class="num">03 /</span>
+            <h3>Sales & team support</h3>
+            <p>Sales representative experience supported by teamwork, time management, multitasking, and written and verbal communication.</p>
+            <div class="tags">
+              <span>Sales support</span>
+              <span>Teamwork</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="career">
+        <div>
+          <div class="eyebrow">Professional background</div>
+          <h2>Experience with<br>real people in mind.</h2>
+          <div class="award">
+            <strong>RECOGNIZED AT ABBOTT (TOXICOLOGY)</strong>
+            Top Performer, Research & Recovery · 2019<br>
+            5 Years Awardee · 2024
+          </div>
+        </div>
+
+        <div>
+          <article class="job">
+            <span class="date">2019 — 2024</span>
+            <div>
+              <h3>Donor Contact Specialist</h3>
+              <span class="company">Abbott · US healthcare account</span>
+              <p>Research & Recovery and data entry.<br>February 2019 – December 2024</p>
+            </div>
+          </article>
+
+          <article class="job">
+            <span class="date">2018 — 2019</span>
+            <div>
+              <h3>Customer Service Representative</h3>
+              <span class="company">PROBE CX · Australian logistics account</span>
+              <p>Seasonal account · August 2018 – February 2019</p>
+            </div>
+          </article>
+
+          <article class="job">
+            <span class="date">2017 — 2018</span>
+            <div>
+              <h3>Customer Service Representative</h3>
+              <span class="company">Intelenet · Barclays UK business financial account</span>
+              <p>August 2017 – April 2018</p>
+            </div>
+          </article>
+
+          <article class="job">
+            <span class="date">2015 — 2016</span>
+            <div>
+              <h3>Customer Service / Sales Representative</h3>
+              <span class="company">Teleperformance · Apple US account</span>
+              <p>August 2015 – March 2016</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div>
+          <div class="eyebrow">Let’s work together</div>
+          <h2>A dependable addition<br>to your remote team.</h2>
+          <p>For customer service, research, data entry, or sales support opportunities, I’d love to connect.</p>
+        </div>
+
+        <div>
+          <a class="contact-address" href="mailto:mariefr.cordero14@gmail.com">mariefr.cordero14@gmail.com ↗</a>
+          <div class="contact-meta">Mawab, Davao de Oro, Philippines · UTC+8</div>
+          <div class="actions">
+            <a class="textlink" href="tel:+639693202858">+63 969 320 2858</a>
+            <a class="textlink" href="assets/marie-cordero-resume.pdf" target="_blank" rel="noopener">View résumé ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Marie Florevie R. Cordero</span>
+      <a href="#">Back to top ↑</a>
+    </footer>
+  </div>
+</body>
+</html>
